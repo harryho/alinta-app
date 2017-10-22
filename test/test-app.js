@@ -50,7 +50,7 @@ describe('The function callApi', () => {
         process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
         https.createServer(options, (req, res) => {
-            // res.setHeader('Content-Type', 'application/json');
+            res.setHeader('Content-Type', 'application/json');
             res.writeHead(200);
             res.end('{"data": "hello world"}');
         }).listen(8000);
