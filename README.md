@@ -1,6 +1,6 @@
 # Alinta-App
 [![Build Status](https://travis-ci.org/harryho/flat-api.svg?branch=master)](https://travis-ci.org/harryho/flat-api)
-
+[![Coverage Status](https://coveralls.io/repos/github/harryho/alinta-app/badge.svg?branch=master)](https://coveralls.io/github/harryho/alinta-app?branch=master)
 
 It is a repository of alinta app
 
