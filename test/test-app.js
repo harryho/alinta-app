@@ -30,12 +30,12 @@ describe('AlintaApp', () => {
 
     it('should has callApi function', () => {
         let app = new AlintaApp()
-        assert.isTrue(typeof(app.run) === 'function')
+        assert.isTrue(typeof(app.callApi) === 'function')
     })
 
-    it('should has listCharacters function', () => {
+    it('should has listActors function', () => {
         let app = new AlintaApp()
-        assert.isTrue(typeof(app.run) === 'function')
+        assert.isTrue(typeof(app.listActors) === 'function')
     })
 
 })
@@ -58,13 +58,14 @@ describe('The function callApi', () => {
         let app = new AlintaApp()
         app.basicUrl = 'https://localhost:8000'
 
-        let response = {data: ''}
 
-        expect( app.callApi('', data => { response = data  })               
-            ).to.satisfy(()=>{ return response.data = 'hello world'})
+        app.callApi('', data => { 
+               assert.deepEqual(data, {data: 'hello world'})
+          });     
 
     })  
 
+ 
 })
 
 
@@ -112,7 +113,6 @@ describe('The function listActors', () => {
     it('should be able to handle the roles with missing film name', () => {
 
         let app = new AlintaApp()
-
           assert
         .deepEqual( app.listActors(
             [{name: '', 
