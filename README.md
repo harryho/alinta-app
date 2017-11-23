@@ -1,8 +1,8 @@
-# Alinta-App
+# Move-List-App
 [![Build Status](https://travis-ci.org/harryho/alinta-app.svg?branch=master)](https://travis-ci.org/harryho/alinta-app)
 [![Coverage Status](https://coveralls.io/repos/github/harryho/alinta-app/badge.svg?branch=master)](https://coveralls.io/github/harryho/alinta-app?branch=master)
 
-It is a repository of alinta app
+It is a repository of movie list app
 
 ## Features
 
